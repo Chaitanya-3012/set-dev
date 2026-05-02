@@ -82,7 +82,7 @@ And get ready-to-use setup scripts for Python and data science environments.
 ## Why set-dev?
 
 > Stop memorizing and copy-pasting commands! set-dev creates ready-made project structures, enabling rapid prototyping, consistent onboarding, and reproducible setups across tech stacks.
-
+> Try it if you're a lazy developer !
 ## Contributing
 
 set-dev is open to all contributions!  
