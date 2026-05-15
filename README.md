@@ -1,6 +1,6 @@
 # set-dev
 
-**set-dev** is a zero-config CLI tool that helps developers generate starter setup commands and JSON scripts for popular frameworks in seconds—no more memorizing or searching boilerplate commands. Speed up your workflow for JavaScript (React, Express, Next.js) stacks, with support for Python backends and data science environments coming soon!
+**set-dev** is a zero-config CLI tool that helps developers generate starter setup commands and JSON scripts for popular frameworks in seconds—no more memorizing or searching boilerplate commands. Speed up your workflow for JavaScript (React, Express, Next.js) stacks with the latest framework versions and best practices!
 
 ## Demonstration
 
@@ -17,7 +17,8 @@
   - JavaScript: React, Express, Next.js
   - Output includes ready-to-use setup commands and a tailored JSON file (e.g., `react-setup.json`)
 - **Customizations:**
-  - Generate commands for TypeScript, MongoDB, MySQL, Postgres, Redis, Tailwind, ESLint, Material UI, Redux, and more.
+  - Generate commands for TypeScript, MongoDB, MySQL, Postgres, Redis, Tailwind, ESLint, Material UI, Redux, Shadcn/ui, Three.js, and more.
+  - Latest framework versions and best practices
 - **Smart Output:** Quickly see all commands and packages needed for your stack.
 
 ## Installation & Usage
@@ -34,13 +35,13 @@ A JSON file with curated commands for your chosen framework is generated in your
 
 ## Examples
 
-### React (Vite, MUI, Redux, Tailwind, etc.)
+### React (Vite, MUI, Redux, Tailwind, Shadcn/ui, etc.)
 
 ```bash
 npx set-dev --react
 ```
 
-- `vite-react`, `vite-react-mui`, `vite-react-redux`, `vite-react-tailwind`, etc., included in output.
+- `vite-react`, `vite-react-ts`, `vite-react-mui`, `vite-react-shadcn`, `vite-react-redux`, `vite-react-tailwind`, etc., included in output.
 
 ### Express (TS, MongoDB, Redis, Middleware...)
 
@@ -48,13 +49,15 @@ npx set-dev --react
 npx set-dev --express
 ```
 
-- Output commands for TypeScript, Mongoose, MySQL, Postgres, Redis, and more.
+- Output commands for TypeScript, Prisma, Mongoose, MySQL, Postgres, Redis, Auth, and more.
 
-### Next.js (TypeScript, 3JS, MUI, Redux...)
+### Next.js (TypeScript, App Router, 3JS, MUI, Shadcn/ui, Auth...)
 
 ```bash
 npx set-dev --next
 ```
+
+- Output commands for TypeScript with App Router, Three.js, Material UI, Shadcn/ui, Auth, and more.
 
 ## Output
 

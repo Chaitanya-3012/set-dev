@@ -1,7 +1,7 @@
 {
   "name": "set-dev",
-  "version": "1.0.2",
-  "description": "A package for developers to get starting commands for setup",
+  "version": "1.2.0",
+  "description": "A package for developers to get starting commands for setup with latest framework versions",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -29,5 +29,12 @@
   "bugs": {
     "url": "https://github.com/Chaitanya-3012/set-dev/issues"
   },
-  "homepage": "https://github.com/Chaitanya-3012/set-dev#readme"
+  "homepage": "https://github.com/Chaitanya-3012/set-dev#readme",
+  "dependencies": {
+    "prompts": "^2.4.2",
+    "ora": "^5.4.1",
+    "chalk": "^4.1.2",
+    "execa": "^5.1.1",
+    "fs-extra": "^10.1.0"
+  }
 }
