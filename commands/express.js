@@ -1,7 +1,7 @@
 const ExpressSetup = () => {
     return {
         name: "Express Project",
-        version: "1.0.1",
+        version: "1.0.2",
         description: "A new Express project with latest setup commands",
         commands: {
             "vanilla-express": "npm init -y && npm install express",
@@ -32,6 +32,34 @@ const ExpressSetup = () => {
             "bcryptjs": "npm install bcryptjs",
             "jsonwebtoken": "npm install jsonwebtoken",
             "cookie-parser": "npm install cookie-parser",
+        },
+        // Metadata for interactive prompts
+        setupTypes: {
+            "vanilla-express": {
+                name: "Vanilla Express",
+                description: "Basic Express server setup",
+                estimatedTime: "1 minute"
+            },
+            "express-ts": {
+                name: "Express with TypeScript",
+                description: "Express server with TypeScript support",
+                estimatedTime: "2 minutes"
+            },
+            "express-mongoose": {
+                name: "Express with MongoDB",
+                description: "Express server with Mongoose ORM",
+                estimatedTime: "2 minutes"
+            },
+            "express-prisma": {
+                name: "Express with Prisma",
+                description: "Express server with Prisma ORM",
+                estimatedTime: "2 minutes"
+            },
+            "express-auth": {
+                name: "Express with Authentication",
+                description: "Express server with JWT authentication",
+                estimatedTime: "2 minutes"
+            }
         }
     };
 };

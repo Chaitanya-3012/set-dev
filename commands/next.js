@@ -1,7 +1,7 @@
 const NextSetup = () => {
     return {
         name: "NextJS Project",
-        version: "1.0.1",
+        version: "1.0.2",
         description: "A new NextJS project with latest setup commands",
         commands: {
             "vanilla-next": "npx create-next-app@latest my-app",
@@ -22,6 +22,34 @@ const NextSetup = () => {
             "@reduxjs/toolkit": "npm install @reduxjs/toolkit react-redux",
             "tailwindcss": "npm install -D tailwindcss postcss autoprefixer && npx tailwindcss init -p",
             "next-auth": "npm install next-auth",
+        },
+        // Metadata for interactive prompts
+        setupTypes: {
+            "vanilla-next": {
+                name: "Vanilla Next.js",
+                description: "Basic Next.js app with default template",
+                estimatedTime: "2-3 minutes"
+            },
+            "next-ts": {
+                name: "Next.js with TypeScript",
+                description: "Next.js app with TypeScript support",
+                estimatedTime: "2-3 minutes"
+            },
+            "next-appdir": {
+                name: "Next.js with App Router",
+                description: "Next.js app with App Router (new folder structure)",
+                estimatedTime: "2-3 minutes"
+            },
+            "next-tailwind": {
+                name: "Next.js with Tailwind CSS",
+                description: "Next.js app with Tailwind CSS styling",
+                estimatedTime: "3-4 minutes"
+            },
+            "next-shadcn": {
+                name: "Next.js with Shadcn/ui",
+                description: "Next.js app with Shadcn/ui components",
+                estimatedTime: "3-4 minutes"
+            }
         }
     };
 };
