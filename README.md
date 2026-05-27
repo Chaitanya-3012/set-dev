@@ -39,9 +39,9 @@ npx set-dev              # Interactive setup - choose framework and options
 Use CLI flags for automated setups:
 
 ```bash
-npx set-dev react my-app --type vite-react-ts
-npx set-dev express api --type express-ts
-npx set-dev next web --type next-appdir
+npx set-dev react . --type vite-react-ts
+npx set-dev express . --type express-ts
+npx set-dev next . --type next-appdir
 ```
 
 ### Backward Compatibility Mode
@@ -67,28 +67,28 @@ Follow the interactive prompts to choose your framework, setup type, and project
 #### React Projects
 ```bash
 # Vite React with TypeScript
-npx set-dev react my-react-app --type vite-react-ts
+npx set-dev react . --type vite-react-ts
 
 # Vite React with Tailwind CSS
-npx set-dev react my-react-app --type vite-react-tailwind
+npx set-dev react . --type vite-react-tailwind
 ```
 
 #### Express Projects
 ```bash
 # Express with TypeScript
-npx set-dev express my-api --type express-ts
+npx set-dev express . --type express-ts
 
 # Express with MongoDB
-npx set-dev express my-api --type express-mongoose
+npx set-dev express . --type express-mongoose
 ```
 
 #### Next.js Projects
 ```bash
 # Next.js with TypeScript
-npx set-dev next my-web --type next-ts
+npx set-dev next . --type next-ts
 
 # Next.js with App Router
-npx set-dev next my-web --type next-appdir
+npx set-dev next . --type next-appdir
 ```
 
 ### Backward Compatibility - Generate JSON Files
@@ -133,15 +133,15 @@ npx set-dev [options] [framework] [directory]
 
 Options:
   --type <type>        Setup type (e.g., vite-react, express-ts)
-  --dir <directory>    Project directory name
+  --dir <directory>    Project directory name (use '.' for current directory)
   --non-interactive    Run in non-interactive mode
   --help, -h          Show help message
 
 Examples:
   npx set-dev                    # Interactive setup
   npx set-dev react              # Interactive React setup
-  npx set-dev --react --type vite-react-ts --dir my-app
-  npx set-dev express my-api --non-interactive
+  npx set-dev --react --type vite-react-ts --dir .
+  npx set-dev express . --non-interactive
 ```
 
 ## Coming Soon
